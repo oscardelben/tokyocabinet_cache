@@ -1,0 +1,9 @@
+Include this module in your application controller file to use fragment caching with Rails.
+
+In your views:
+
+    <p>Test not cached</p>
+
+    <%= tokyo_cache "simple" do %>
+      <p>Test cached <%= 1 + 7 %></p>
+    <% end %>
